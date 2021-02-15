@@ -52,3 +52,32 @@ header h1 {
 .desk .card:nth-child(4n) {
     margin-right: 0;
 }
+.front {
+    visibility: hidden;
+}
+.card:hover .front {
+    visibility: visible;
+    height: 100%;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+}
+.front > img,
+.active > img {
+    width: 100%;
+}
+.front > h2 {
+    color: #e67918;
+    text-shadow: 1px 1px #8d8883;
+}
+
+.active > h2 {
+    color: #e61886;
+    text-shadow: 1px 1px #9f9299;
+}
+.active {
+    height: 100%;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+}
